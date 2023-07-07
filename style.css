@@ -1,0 +1,95 @@
+body{
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 280px 280px 260px 200px;
+    grid-template-rows: 265px auto;
+    gap: 15px;
+    margin-top: 35px;
+}
+.title{
+    background-image: url("./images/bg-pattern-quotation.svg");
+    margin: 5px 25px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.title-bkg{
+    display: flex;
+    height: 50px;
+}
+.title-bkg .img{
+    width: 30px;
+    height: 30px;
+    border: 3px solid hsl(263, 55%, 52%);
+    border-radius: 30px;
+    margin: 18px;
+}
+.title-bkg img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 18px;
+}
+.first-p{
+    font-size: 13px;
+    margin-left: 15px;
+}
+.card{
+    border-radius: 10px;
+}
+.header{
+    color: hsl(0, 0%, 100%);
+}
+.verified{
+    color: hsla(0, 0%, 100%, 0.50);
+    font-size: 13px;
+}
+.graduate{
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
+}
+.content-white{
+    color: hsla(0, 0%, 100%, 0.70);
+}
+.content{
+    color: hsl(217, 19%, 35%, 0.50);
+}
+.daniel{
+    grid-column: span 2;
+    background-color: hsla(263, 55%, 52%, 0.884);
+    color: hsl(0, 0%, 100%);
+    text-align: justify;
+}
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%)
+}
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    grid-row-start: 2;
+    grid-column: span 2;
+}
+.jeanete{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-row-start: 2;
+}
+.kira{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-row: span 2;
+    grid-column-start: 4;
+}
+@media screen and (max-width: 375px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        margin: none;
+    }
+}
